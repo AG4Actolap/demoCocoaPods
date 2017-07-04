@@ -11,5 +11,6 @@ s.frameworks     = "SystemConfiguration", "CoreLocation", "CoreMotion", "CoreTel
 s.libraries      = "t.1.0.0", "sqlite3", "objective c"
 
 s.ios.vendored_frameworks = 'Trackwick.framework'
+s.source_files     = "Trackwick.framework", "TrackwickResources.bundle"
 s.requires_arc = true
 end
