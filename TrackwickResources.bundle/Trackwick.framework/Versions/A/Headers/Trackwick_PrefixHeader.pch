@@ -1,0 +1,28 @@
+//
+//  Trackwick_PrefixHeader.pch
+//  Trackwick SDK
+//
+//  Created by actolap on 29/06/17.
+//  Copyright © 2017 Actolap Solutions India Pvt. Ltd. All rights reserved.
+//
+
+//#ifndef Trackwick_PrefixHeader_pch
+//#define Trackwick_PrefixHeader_pch
+//
+//// Include any system framework and library headers here that should be included in all compilation units.
+//// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+//
+//#endif /* Trackwick_PrefixHeader_pch */
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
