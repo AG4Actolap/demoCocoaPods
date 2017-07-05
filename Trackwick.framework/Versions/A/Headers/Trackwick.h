@@ -18,10 +18,16 @@
 
 @interface Trackwick : NSObject 
 
+// This is a shared instance of Trackwick class.
 + (id)sharedInstance;
 
+// Use this method to start Motion Tracking and GPS Activities
 - (void)startTracking;
 
+// Use this method to stop Motion Tracking and GPS Activities
+- (void)stopTracking;
+
+// Use this method for Registering your Tracker with SDK by just providing SDK_ID and Tracker_ID and a delegate reference for callbacks
 + (Trackwick *)initialFramework:(NSString *)sdkID andTrackerID:(NSString *)trackerID andDelegate:(id)delegate;
 
 @end
