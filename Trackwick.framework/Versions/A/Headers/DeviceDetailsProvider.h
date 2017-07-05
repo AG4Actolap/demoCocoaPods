@@ -37,6 +37,8 @@
 + (NSNumber *)isLocationServiceEnabled;
 + (float)getHeadingForDirectionFromCoordinate:(CLLocationCoordinate2D)fromLoc toCoordinate:(CLLocationCoordinate2D)toLoc;
 + (void)startNetworkReachableListening;
++ (NSString *)getGPSSource;
++ (NSNumber *)isNetwork;
 //extern NSNumber *isNetworkReachable;
 
 @end
