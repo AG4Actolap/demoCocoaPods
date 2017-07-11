@@ -21,6 +21,8 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
++ (id)sharedInstance;
+
 -(NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 -(NSManagedObjectModel *)managedObjectModel;
 -(NSManagedObjectContext *)managedObjectContext;
